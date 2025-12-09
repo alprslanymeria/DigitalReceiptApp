@@ -5,12 +5,12 @@ void main() {
   group('Receipt Entity', () {
     test('should be a subclass of Equatable', () {
       // Arrange
-      const receipt = Receipt(
+      final receipt = Receipt(
         id: '1',
         storeName: 'Test Store',
-        date: null,
+        date: DateTime.now(),
         totalAmount: 100.0,
-        items: [],
+        items: const [],
       );
 
       // Assert

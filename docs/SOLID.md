@@ -1,6 +1,6 @@
 # SOLID Prensipleri - Detaylı Açıklama
 
-Bu dokümanda SOLID prensiplerininin projede nasıl uygulandığını örneklerle açıklıyoruz.
+Bu dokümanda SOLID prensiplerinin projede nasıl uygulandığını örneklerle açıklıyoruz.
 
 ## 1. Single Responsibility Principle (SRP)
 **"Bir sınıf sadece bir değişme sebebine sahip olmalıdır."**
