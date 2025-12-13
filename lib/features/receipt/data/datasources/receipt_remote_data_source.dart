@@ -23,7 +23,14 @@ class ReceiptRemoteDataSourceImpl implements ReceiptRemoteDataSource {
   @override
   Future<ReceiptModel> getReceiptById(String id) async {
     await Future.delayed(const Duration(seconds: 1));
-    throw UnimplementedError('Remote data source not implemented yet');
+    // In a real app, this would make an API call
+    // For now, return empty list from getAllReceipts or throw specific exception
+    final receipts = await getAllReceipts();
+    final receipt = receipts.where((r) => r.id == id).firstOrNull;
+    if (receipt == null) {
+      throw Exception('Receipt with id $id not found');
+    }
+    return receipt;
   }
 
   @override

@@ -25,7 +25,7 @@ Map<String, dynamic> _$ReceiptModelToJson(ReceiptModel instance) =>
       'storeAddress': instance.storeAddress,
       'date': instance.date.toIso8601String(),
       'totalAmount': instance.totalAmount,
-      'items': instance.items.map((e) => (e as ReceiptItemModel).toJson()).toList(),
+      'items': instance.items,
       'imageUrl': instance.imageUrl,
     };
 
